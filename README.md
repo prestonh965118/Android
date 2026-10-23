@@ -7,6 +7,7 @@
 | 文件 | 主题 |
 | --- | --- |
 | [Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md) | Android 内核漏洞与提权防御分析 |
+| [Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md) | Android Framework 信任边界与越权漏洞分析 |
 
 ---
 
