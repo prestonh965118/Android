@@ -5,7 +5,7 @@
 - 版本：v1.0（2026-10-23）
 - 适用对象：Android 应用安全评估、设备/固件合规审计、移动安全管理（MDM/MAS）、威胁与风险建模人员
 - 范围声明：本文只描述**公开文档化的架构机制**、其设计意图与失效后果，用于加固与检测。不提供任何漏洞利用代码、偏移量、绕过步骤或可操作的攻击流程。
-- 姊妹篇：[Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)、[Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)、[Android Linux 内核结构与子系统机制分析报告](./Android-Linux-Kernel-Structure-and-Subsystems.md)。本文与它们的区别在于**视角**：前两篇按"缺陷类型学 + 攻防"切，内核结构篇按"代码从哪来、打进哪个镜像、由谁加载"切，本篇按"系统结构 + 信任边界"切，回答的是"这块代码在哪个进程、哪层权限、谁校验它"。
+- 姊妹篇：[Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)、[Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)、[Android Linux 内核结构与子系统机制分析报告](./Android-Linux-Kernel-Structure-and-Subsystems.md)、[Android Binder IPC 协议与运行时机制分析报告](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md)。本文与它们的区别在于**视角**：前两篇按"缺陷类型学 + 攻防"切，内核结构篇按"代码从哪来、打进哪个镜像、由谁加载"切，Binder 篇按"一次跨进程调用的协议与运行时"切，本篇按"系统结构 + 信任边界"切，回答的是"这块代码在哪个进程、哪层权限、谁校验它"。
 
 ---
 

@@ -11,6 +11,7 @@
 | [Android-Linux-Kernel-Structure-and-Subsystems.md](./Android-Linux-Kernel-Structure-and-Subsystems.md) | Android Linux 内核结构与子系统机制分析 |
 | [Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md](./Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md) | Android 系统架构：分层、进程与信任边界分析 |
 | [Android-Root-of-Trust-and-Key-Stack-Mechanisms.md](./Android-Root-of-Trust-and-Key-Stack-Mechanisms.md) | Android 硬件信任根与密钥栈机制分析（AVB/DICE/KeyMint/Gatekeeper/证明/RKP） |
+| [Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md) | Android Binder IPC 协议与运行时机制分析（BC_/BR_ 词表、对象生命周期、缓冲区、SELinux、binderfs、Stable AIDL、RPC） |
 
 ---
 

@@ -8,6 +8,7 @@
   - [Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)（攻击面分级、缺陷分类、公开案例、缓解矩阵、补丁治理指标、提权取证）
   - [Android 系统架构分析报告](./Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md)（六段分层、进程与 IPC、HAL/Treble、存储与更新架构）
   - [Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)（Framework 层的身份/权限缺陷）
+  - [Android Binder IPC 协议与运行时机制分析报告](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md)（binder 驱动/协议词表、binderfs 节点供给、SELinux binder 类与 service_manager 判定）
 - 范围声明：全文仅描述公开文档化的机制与其设计意图，不提供任何漏洞利用代码、偏移量、绕过步骤或可操作的攻击流程。
 
 ---

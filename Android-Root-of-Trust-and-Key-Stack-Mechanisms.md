@@ -9,6 +9,7 @@
   - [Android Linux 内核结构与子系统机制分析报告](./Android-Linux-Kernel-Structure-and-Subsystems.md)：内核镜像形态、dm-verity/fs-verity 在内核里的落点、debugfs 与遥测
   - [Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)：Framework 的攻击面与缺陷类型学
   - [Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)：缺陷分类、公开 CVE 案例与缓解矩阵
+  - [Android Binder IPC 协议与运行时机制分析报告](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md)：BC_/BR_ 词表、身份与 SELinux 判定、binderfs、Stable AIDL 与 RPC
 - 范围声明：全文仅描述**公开文档化的机制与其设计意图**，用于加固、选型与取证。不提供任何密钥提取、签名校验绕过、锁屏口令恢复或可操作的攻击流程；涉及已知失效类别时，只引用官方通告与文档给出的定性结论。
 
 ---
