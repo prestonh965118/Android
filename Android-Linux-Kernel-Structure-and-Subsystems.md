@@ -6,7 +6,7 @@
 - 适用对象：ROM/OEM 平台工程、内核与驱动维护、移动安全评估、设备完整性审计、漏洞管理负责人
 - 视角声明：本文写的是**内核的结构与机制**——这块代码从哪来、被打进哪个镜像、由谁加载、暴露成哪个节点、能力被哪一层限制。**缺陷类型学、CVE 案例、SPL 指标与提权取证不在本文**，那些内容在姊妹篇里，本文只做交叉引用而不重复：
   - [Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)（攻击面分级、缺陷分类、公开案例、缓解矩阵、补丁治理指标、提权取证）
-  - **Android 系统架构分析报告**（`Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md`，六段分层、进程与 IPC、HAL/Treble、存储与更新架构；尚未发布到本仓库时，按文件名在工作区查阅）
+  - [Android 系统架构分析报告](./Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md)（六段分层、进程与 IPC、HAL/Treble、存储与更新架构）
   - [Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)（Framework 层的身份/权限缺陷）
 - 范围声明：全文仅描述公开文档化的机制与其设计意图，不提供任何漏洞利用代码、偏移量、绕过步骤或可操作的攻击流程。
 
