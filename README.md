@@ -16,6 +16,7 @@
 | [Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md](./Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md) | Android 系统架构：分层、进程与信任边界分析 |
 | [Android-Root-of-Trust-and-Key-Stack-Mechanisms.md](./Android-Root-of-Trust-and-Key-Stack-Mechanisms.md) | Android 硬件信任根与密钥栈机制分析（AVB/DICE/KeyMint/Gatekeeper/证明/RKP） |
 | [Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md) | Android Binder IPC 协议与运行时机制分析（BC_/BR_ 词表、对象生命周期、缓冲区、SELinux、binderfs、Stable AIDL、RPC） |
+| [Android-Attack-Surface-and-Vulnerability-Research-Methodology.md](./Android-Attack-Surface-and-Vulnerability-Research-Methodology.md) | Android 攻击面与漏洞研究方法论分析（九域可达面清点、R0–R4 分级、目标选择评分、静态与模糊测试、补丁到达性验证、检测覆盖矩阵与只读测绘脚本） |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Android 安全分析报告集"
-description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时"
+description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时、跨域攻击面与漏洞研究方法论"
 lang: zh-CN
 permalink: /
 ---
@@ -22,6 +22,7 @@ permalink: /
 | [Android Linux 内核结构与子系统机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Linux-Kernel-Structure-and-Subsystems.html) | GKI 内核镜像形态、模块与子系统、设备节点供给、安全控制落点与能力边界 | 18 章 | 610 行 |
 | [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html) | AVB 验证启动、DICE 与 RKP、KeyMint/StrongBox、Gatekeeper/Weaver、密钥证明与 FBE | 20 章 | 778 行 |
 | [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html) | BC_/BR_ 协议词表、对象生命周期与死亡/冻结、事务缓冲区与线程池、SELinux 判定、binderfs、Stable AIDL 与 RPC | 22 章 | 924 行 |
+| [Android 攻击面与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html) | 九域可达面清点单元与 R0–R4 分级、跨域地图、目标选择评分、静态/模糊测试方法、补丁到达性验证、检测覆盖矩阵与测绘脚本 | 23 章 | 774 行 |
 
 ## 建议阅读顺序
 
@@ -29,7 +30,8 @@ permalink: /
 2. 再读**内核结构**篇，弄清代码从哪来、打进哪个镜像、由谁加载；
 3. 需要评估跨进程调用与权限判定时读 **Binder IPC** 篇（协议与运行时）与 **Framework 信任边界**篇（缺陷类型学）；
 4. 关注设备完整性、密钥与证明体系时读**硬件信任根与密钥栈**篇；
-5. 关注内核侧风险与补丁治理时读**内核漏洞与提权防御**篇。
+5. 关注内核侧风险与补丁治理时读**内核漏洞与提权防御**篇；
+6. 需要把各篇拼成一次可执行的评估流程时读**攻击面与漏洞研究方法论**篇（清点单元、优先级评分、到达性验证与检测覆盖矩阵）。
 
 各篇之间按"视角"分工并互相交叉引用，重复内容只保留引用不重复展开。
 
@@ -44,6 +46,7 @@ permalink: /
 
 ## 更新记录
 
+- 2026-10-25：新增《Android 攻击面与漏洞研究方法论分析报告》（九域可达面清点 + 研究方法论 + 只读测绘脚本）。
 - 2026-10-24：新增《Android Binder IPC 协议与运行时机制分析报告》；站点化（Pages + 目录页 + 站点地图）。
 - 2026-10-23：新增《Android 系统架构分析报告》《Android Linux 内核结构与子系统机制分析报告》《Android 硬件信任根与密钥栈机制分析报告》。
 - 2026-10-22：新增《Android 内核漏洞与提权防御分析报告》《Android Framework 信任边界与越权漏洞分析报告》。
