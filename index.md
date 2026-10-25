@@ -16,12 +16,12 @@ permalink: /
 
 | 报告 | 覆盖范围 | 章节 | 篇幅 |
 | --- | --- | --- | --- |
-| [Android 内核漏洞与提权防御分析报告](https://prestonh965118.github.io/Android/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense/) | 内核攻击面分级、缺陷类型学、公开 CVE 案例、缓解矩阵、补丁治理指标与提权取证 | 14 章 | 544 行 |
-| [Android Framework 信任边界与越权漏洞分析报告](https://prestonh965118.github.io/Android/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis/) | Framework 层身份与权限模型、越权类缺陷类型学、EoP 公告归因与检测 | 14 章 | 572 行 |
-| [Android 系统架构分析报告：分层、进程与信任边界](https://prestonh965118.github.io/Android/Android-System-Architecture-Layers-Processes-and-Trust-Boundaries/) | 六段分层、进程模型、HAL/Treble、SELinux/seccomp/AID 身份与三条更新通道 | 19 章 | 655 行 |
-| [Android Linux 内核结构与子系统机制分析报告](https://prestonh965118.github.io/Android/Android-Linux-Kernel-Structure-and-Subsystems/) | GKI 内核镜像形态、模块与子系统、设备节点供给、安全控制落点与能力边界 | 18 章 | 610 行 |
-| [Android 硬件信任根与密钥栈机制分析报告](https://prestonh965118.github.io/Android/Android-Root-of-Trust-and-Key-Stack-Mechanisms/) | AVB 验证启动、DICE 与 RKP、KeyMint/StrongBox、Gatekeeper/Weaver、密钥证明与 FBE | 20 章 | 778 行 |
-| [Android Binder IPC 协议与运行时机制分析报告](https://prestonh965118.github.io/Android/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms/) | BC_/BR_ 协议词表、对象生命周期与死亡/冻结、事务缓冲区与线程池、SELinux 判定、binderfs、Stable AIDL 与 RPC | 22 章 | 924 行 |
+| [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html) | 内核攻击面分级、缺陷类型学、公开 CVE 案例、缓解矩阵、补丁治理指标与提权取证 | 14 章 | 544 行 |
+| [Android Framework 信任边界与越权漏洞分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.html) | Framework 层身份与权限模型、越权类缺陷类型学、EoP 公告归因与检测 | 14 章 | 572 行 |
+| [Android 系统架构分析报告：分层、进程与信任边界](https://android-security-reports-0e8t10askpz.qoder.website/Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.html) | 六段分层、进程模型、HAL/Treble、SELinux/seccomp/AID 身份与三条更新通道 | 19 章 | 655 行 |
+| [Android Linux 内核结构与子系统机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Linux-Kernel-Structure-and-Subsystems.html) | GKI 内核镜像形态、模块与子系统、设备节点供给、安全控制落点与能力边界 | 18 章 | 610 行 |
+| [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html) | AVB 验证启动、DICE 与 RKP、KeyMint/StrongBox、Gatekeeper/Weaver、密钥证明与 FBE | 20 章 | 778 行 |
+| [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html) | BC_/BR_ 协议词表、对象生命周期与死亡/冻结、事务缓冲区与线程池、SELinux 判定、binderfs、Stable AIDL 与 RPC | 22 章 | 924 行 |
 
 ## 建议阅读顺序
 

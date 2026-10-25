@@ -2,7 +2,9 @@
 
 本仓库收录 Android 平台防御性安全分析文章，内容仅涉及公开披露的机制、漏洞类别、影响分析与加固建议，不提供任何可用的漏洞利用代码或攻击操作步骤。
 
-在线站点（正文主版本）：<https://prestonh965118.github.io/Android/>
+在线站点（渲染后的正文主版本）：<https://android-security-reports-0e8t10askpz.qoder.website/>
+- sitemap：<https://android-security-reports-0e8t10askpz.qoder.website/sitemap.xml>
+- GitHub Pages 版本（待启用）：<https://prestonh965118.github.io/Android/>
 
 ## 目录
 
