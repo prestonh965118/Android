@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prestonh965118.github.io/Android/sitemap.xml

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Android 硬件信任根与密钥栈机制分析报告"
+description: "AVB 验证启动、DICE/RKP、KeyMint 与 StrongBox、Gatekeeper/Weaver、密钥证明与 FBE 的机制与审计证据"
+lang: zh-CN
+permalink: /Android-Root-of-Trust-and-Key-Stack-Mechanisms/
+---
 # Android 硬件信任根与密钥栈机制分析报告
 
 ## The Android Hardware Root of Trust and Key Stack: Verified Boot, DICE, KeyMint, Gatekeeper, Attestation and Remote Key Provisioning
@@ -5,11 +12,11 @@
 - 版本：v1.0（2026-10-24）
 - 适用对象：设备/固件合规审计、移动安全管理（MDM/MAS）、密钥与证明依赖的服务端风控设计、应用安全评估人员
 - 视角声明：本文写的是**信任与密钥这条链怎么搭起来、每一环由谁执法、失效时外部能看到什么证据**。为避免与已有文章重复，以下内容只做交叉引用而不展开：
-  - [Android 系统架构分析报告](./Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.md)：六段分层、进程与 IPC、SELinux/seccomp/AID 身份模型、分区与更新通道
-  - [Android Linux 内核结构与子系统机制分析报告](./Android-Linux-Kernel-Structure-and-Subsystems.md)：内核镜像形态、dm-verity/fs-verity 在内核里的落点、debugfs 与遥测
-  - [Android Framework 信任边界与越权漏洞分析报告](./Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.md)：Framework 的攻击面与缺陷类型学
-  - [Android 内核漏洞与提权防御分析报告](./Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.md)：缺陷分类、公开 CVE 案例与缓解矩阵
-  - [Android Binder IPC 协议与运行时机制分析报告](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md)：BC_/BR_ 词表、身份与 SELinux 判定、binderfs、Stable AIDL 与 RPC
+  - [Android 系统架构分析报告](https://prestonh965118.github.io/Android/Android-System-Architecture-Layers-Processes-and-Trust-Boundaries/)：六段分层、进程与 IPC、SELinux/seccomp/AID 身份模型、分区与更新通道
+  - [Android Linux 内核结构与子系统机制分析报告](https://prestonh965118.github.io/Android/Android-Linux-Kernel-Structure-and-Subsystems/)：内核镜像形态、dm-verity/fs-verity 在内核里的落点、debugfs 与遥测
+  - [Android Framework 信任边界与越权漏洞分析报告](https://prestonh965118.github.io/Android/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis/)：Framework 的攻击面与缺陷类型学
+  - [Android 内核漏洞与提权防御分析报告](https://prestonh965118.github.io/Android/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense/)：缺陷分类、公开 CVE 案例与缓解矩阵
+  - [Android Binder IPC 协议与运行时机制分析报告](https://prestonh965118.github.io/Android/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms/)：BC_/BR_ 词表、身份与 SELinux 判定、binderfs、Stable AIDL 与 RPC
 - 范围声明：全文仅描述**公开文档化的机制与其设计意图**，用于加固、选型与取证。不提供任何密钥提取、签名校验绕过、锁屏口令恢复或可操作的攻击流程；涉及已知失效类别时，只引用官方通告与文档给出的定性结论。
 
 ---

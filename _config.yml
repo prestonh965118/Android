@@ -1,0 +1,9 @@
+theme: jekyll-theme-minimal
+title: Android 安全分析报告集
+description: Android 平台防御性安全分析报告：内核、Framework、系统架构、硬件信任根与密钥栈、Binder IPC
+lang: zh-CN
+show_downloads: false
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
