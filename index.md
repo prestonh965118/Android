@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Android 安全分析报告集"
-description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时、跨域攻击面与漏洞研究方法论、厂商硬件安全组件形态、补丁传导链与更新治理"
+description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时、跨域攻击面与漏洞研究方法论、厂商硬件安全组件形态、补丁传导链与更新治理、远程代码执行攻击面与防御核验"
 lang: zh-CN
 permalink: /
 ---
@@ -25,6 +25,7 @@ permalink: /
 | [Android 攻击面与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html) | 九域可达面清点单元与 R0–R4 分级、跨域地图、目标选择评分、静态/模糊测试方法、补丁到达性验证、检测覆盖矩阵与测绘脚本 | 23 章 | 776 行 |
 | [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html) | 独立安全处理器与 SoC 内安全世界、Trusty 与 OP-TEE 路线、StrongBox/eSE、AVF/pKVM、Knox Vault 与 Titan M2 形态，以及可外部核验信号与不可核验边界 | 16 章 | 529 行 |
 | [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html) | SPL 两档与框架/厂商两侧语义、S1–S5 五段链条与公开证据、三条并行更新通道、更新承诺三处坑、八项可运营指标与两个只读核验脚本 | 17 章 | 547 行 |
+| [Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html) | 公告 RCE/严重度/在野措辞三口径、四条投递通道（内容解析器/浏览器内核/近场无线/基带）、执行落点权限模型、内存与非内存缺陷类型学、缓解机制与失效面矩阵、七项运营指标与两个只读核验脚本 | 22 章 | 772 行 |
 
 ## 建议阅读顺序
 
@@ -35,6 +36,7 @@ permalink: /
 5. 关注内核侧风险与补丁治理时读**内核漏洞与提权防御**篇；
 6. 需要把各篇拼成一次可执行的评估流程时读**攻击面与漏洞研究方法论**篇（清点单元、优先级评分、到达性验证与检测覆盖矩阵）。
 7. 做设备采购、资产清点或供应商评估时读**厂商硬件安全组件形态**篇（器件与可核验信号）与**补丁传导链与更新治理**篇（固件能不能推到设备上、到达性怎么实测）——前者决定上限，后者决定实际值。
+8. 关心"外部输入怎么到达设备上的解析代码"时读**远程代码执行**篇（四条投递通道、执行落点权限、缓解机制与只读核验脚本）；它之后接**Framework 信任边界**篇与**内核漏洞与提权防御**篇，即"进来之后能走到哪"。
 
 各篇之间按"视角"分工并互相交叉引用，重复内容只保留引用不重复展开。
 
@@ -49,7 +51,7 @@ permalink: /
 
 ## 更新记录
 
-- 2026-10-26：新增《Android 厂商硬件安全组件形态与实现差异分析报告》《Android 补丁传导链与厂商更新治理分析报告》。
+- 2026-10-26：新增《Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验》《Android 厂商硬件安全组件形态与实现差异分析报告》《Android 补丁传导链与厂商更新治理分析报告》。
 - 2026-10-25：新增《Android 攻击面与漏洞研究方法论分析报告》（九域可达面清点 + 研究方法论 + 只读测绘脚本）。
 - 2026-10-24：新增《Android Binder IPC 协议与运行时机制分析报告》；站点化（Pages + 目录页 + 站点地图）。
 - 2026-10-23：新增《Android 系统架构分析报告》《Android Linux 内核结构与子系统机制分析报告》《Android 硬件信任根与密钥栈机制分析报告》。
