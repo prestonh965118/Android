@@ -17,6 +17,8 @@
 | [Android-Root-of-Trust-and-Key-Stack-Mechanisms.md](./Android-Root-of-Trust-and-Key-Stack-Mechanisms.md) | Android 硬件信任根与密钥栈机制分析（AVB/DICE/KeyMint/Gatekeeper/证明/RKP） |
 | [Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md](./Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.md) | Android Binder IPC 协议与运行时机制分析（BC_/BR_ 词表、对象生命周期、缓冲区、SELinux、binderfs、Stable AIDL、RPC） |
 | [Android-Attack-Surface-and-Vulnerability-Research-Methodology.md](./Android-Attack-Surface-and-Vulnerability-Research-Methodology.md) | Android 攻击面与漏洞研究方法论分析（九域可达面清点、R0–R4 分级、目标选择评分、静态与模糊测试、补丁到达性验证、检测覆盖矩阵与只读测绘脚本） |
+| [Android-Hardware-Security-Components-and-Vendor-Implementations.md](./Android-Hardware-Security-Components-and-Vendor-Implementations.md) | Android 厂商硬件安全组件形态与实现差异分析（独立安全处理器、安全世界、Trusty/OP-TEE、StrongBox/eSE、AVF/pKVM、可外部核验信号与不可核验边界） |
+| [Android-Patch-Delivery-Chain-and-OEM-Update-Governance.md](./Android-Patch-Delivery-Chain-and-OEM-Update-Governance.md) | Android 补丁传导链与厂商更新治理分析（SPL 两档与框架/厂商两侧、S1–S5 链条、三条更新通道、更新承诺口径、八项指标与两个只读核验脚本） |
 
 ---
 
