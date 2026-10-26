@@ -20,6 +20,7 @@
 | [Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.md](./Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.md) | Android 远程代码执行分析（公告 RCE 口径、四条投递通道、执行落点权限模型、缺陷类型学、缓解机制与失效面矩阵、七项运营指标与两个只读核验脚本） |
 | [Android-Hardware-Security-Components-and-Vendor-Implementations.md](./Android-Hardware-Security-Components-and-Vendor-Implementations.md) | Android 厂商硬件安全组件形态与实现差异分析（独立安全处理器、安全世界、Trusty/OP-TEE、StrongBox/eSE、AVF/pKVM、可外部核验信号与不可核验边界） |
 | [Android-Patch-Delivery-Chain-and-OEM-Update-Governance.md](./Android-Patch-Delivery-Chain-and-OEM-Update-Governance.md) | Android 补丁传导链与厂商更新治理分析（SPL 两档与框架/厂商两侧、S1–S5 链条、三条更新通道、更新承诺口径、八项指标与两个只读核验脚本） |
+| [Android-Platform-Code-Organization-and-Build-System-Analysis.md](./Android-Platform-Code-Organization-and-Build-System-Analysis.md) | Android 平台代码组织与构建体系分析（repo/manifest 源码供给与分支口径、Soong/kati/Ninja、out 与分区装配、签名与 test-keys 构建身份、AVB 绑定、APEX/Mainline、ACK/GKI 交付口径、CDD/CTS/VTS/STS、十项供应链风险清点与两个只读核验脚本） |
 
 ---
 
