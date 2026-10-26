@@ -22,6 +22,7 @@ permalink: /Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis/
   - [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html)（基带与安全处理器的器件侧形态；本文第 11 章负责"这一段的到达性证据"）
   - [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html)（SPL 语义与更新通道——本文第 10、13 章直接使用其结论，不重复论证）
   - [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html)（验证启动与度量状态，本文第 14 章作为执法状态证据采集）
+  - [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html)（本文回答"外部输入怎么抵达解析代码"，该篇回答"代码进来之后落在哪个 UID、哪个 SELinux 域、哪份 seccomp 过滤之下"；执行落点的身份构成与放宽条件不在本文展开）
 - 范围声明：全文只讨论**公开文档化**的公告口径、机制、公开研究论文与公开通告中的缺陷类别，并给出防御侧的清点、度量、核验与检测流程。**不提供任何漏洞利用代码、内存布局与偏移、原语构造、绕过步骤或可直接用于攻击真实设备的操作化流程。**文中所有"如何找/如何验证"均指研发自查、授权评估与检测覆盖建设，运行前提是你对目标设备或代码拥有所有权或书面授权。
 
 ---

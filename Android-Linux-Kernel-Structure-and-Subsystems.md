@@ -17,6 +17,7 @@ permalink: /Android-Linux-Kernel-Structure-and-Subsystems/
   - [Android Framework 信任边界与越权漏洞分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.html)（Framework 层的身份/权限缺陷）
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)（binder 驱动/协议词表、binderfs 节点供给、SELinux binder 类与 service_manager 判定）
   - [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html)（ACK 分支命名与上游优先、GKI 的二进制交付与 KMI/hermetic manifest、构建产物如何被签名与装配；本文讲内核的结构与落点，该篇讲它的构建与交付口径）
+  - [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html)（本文讲内核把设备节点与子系统供给成什么形状，该篇讲应用进程在这一形状之内被 UID、SELinux 域与 seccomp 三层同时围住、以及每层被单独放宽时在设备侧留下什么信号）
 - 范围声明：全文仅描述公开文档化的机制与其设计意图，不提供任何漏洞利用代码、偏移量、绕过步骤或可操作的攻击流程。
 
 ---
