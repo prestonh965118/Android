@@ -19,6 +19,7 @@ permalink: /Android-Binder-IPC-Protocol-and-Runtime-Mechanisms/
   - [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html)：缺陷分类与缓解矩阵；本文只引用 binder 相关的公告条目，不重复案例复盘
   - [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html)：应用进程侧的 UID/域/seccomp 叠加与身份合并（`sharedUserId`、隔离进程）；本文讲 binder 在哪一步检查这套身份，该篇讲身份本身怎么形成、怎么被观察
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)：清单里那些"谁会接到跨进程调用"的导出与权限声明属应用侧姿态（`sharedUserId`、导出组件、URI 授权），本文讲 binder 在哪一步检查这套身份与权限
+  - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲 binder 在哪一步检查身份与权限；该篇讲承载 Wi-Fi/蓝牙/NFC 请求的那几类协议栈进程处于哪个执行域，以及 HAL 接口语言从 HIDL 转 AIDL 的记号为什么只能当旁证而不是修复证明）
 - 范围声明：全文仅描述**公开文档化与源码可核验的机制**。不提供任何利用步骤、偏移量或绕过流程；涉及 binder 驱动缺陷类别时，只转述 Google 安全公告给出的定性字段（类型、严重级、受影响组件），不描述成因细节。
 
 ---

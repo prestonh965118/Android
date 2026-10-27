@@ -21,6 +21,7 @@ permalink: /Android-Patch-Delivery-Chain-and-OEM-Update-Governance/
   - [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html)（版本绑定、度量与证明——本文第 2.3 节用到它的语义）
   - [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html)（器件与认证侧证据；本文负责"固件能不能推到设备上"这一半）
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（本文讲修没修到，该篇讲这一类弱点有没有被纳入检查：更新治理解决已定义缺陷的分发，分类学解决未声明形态的发现）
+  - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文的 S1–S5 链条解释补丁为什么到不了设备；该篇把无线侧当作最难归因的一条通道来使用这些结论：基带固件与蓝牙控制器固件通常落在 SPL 语义难以直接覆盖的位置，设备侧能读到的往往只有 `gsm.version.baseband`，所以"读不到"被记成缺口而不是通过）
 - 范围声明：全文只讨论**公开文档化**的公告机制、更新通道、厂商公开政策与公开研究数据，并给出防御侧的度量、核验与治理方法。**不提供任何绕过更新校验、伪造补丁级别、降级固件或规避厂商限制的操作步骤，也不含漏洞利用代码。**所有"核验"均指在你拥有或获授权的设备上执行只读采集。
 
 ---

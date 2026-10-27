@@ -17,6 +17,7 @@ permalink: /Android-Root-of-Trust-and-Key-Stack-Mechanisms/
   - [Android Framework 信任边界与越权漏洞分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.html)：Framework 的攻击面与缺陷类型学
   - [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html)：缺陷分类、公开 CVE 案例与缓解矩阵
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)：BC_/BR_ 词表、身份与 SELinux 判定、binderfs、Stable AIDL 与 RPC
+  - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲密钥栈、证明链与安全元件本身；该篇讲这套栈的消费侧——NFC 的 off-host 与 Secure NFC 开关、蓝牙既有绑定留下的配对强度记号——在设备侧能被只读观察到什么，以及观察不到的部分为什么记成缺口）
 - 范围声明：全文仅描述**公开文档化的机制与其设计意图**，用于加固、选型与取证。不提供任何密钥提取、签名校验绕过、锁屏口令恢复或可操作的攻击流程；涉及已知失效类别时，只引用官方通告与文档给出的定性结论。
 
 ---
