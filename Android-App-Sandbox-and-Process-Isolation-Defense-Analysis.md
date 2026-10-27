@@ -21,6 +21,7 @@ permalink: /Android-App-Sandbox-and-Process-Isolation-Defense-Analysis/
   - [Android 攻击面与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html)（九域可达面清点与分级；本文的"四层叠加"给出的是其中一域的分解方式）
   - [Android 远程代码执行分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html)（代码如何进来；本文讲进来之后**落在哪个身份与域里**）
   - [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html)（`user`/`userdebug`/`eng` 变体的来源；本文的可调试性判定依赖这一构建身份）
+  - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（平台怎么把应用围住 vs 应用自己在清单里声明了哪些弱点形态；两者是外部约束与自身姿态的两侧，本文的分类只落在应用这一格）
 - 范围声明：全文只讨论**公开文档化**的沙箱构成、隔离机制、公开披露的缺陷类别与公告口径，以及在这些公开规则之上可安全实施的**只读**清点与检测流程。**不提供任何可用的漏洞利用代码、内存布局偏移、原语构造、策略绕过步骤或可操作的攻击流程。**所有"核验"指读者对**自有或已获授权测试的设备与自有应用**执行采集；两个脚本一个只做设备侧只读采集，一个只做离线文本比对，均不写设备、不装策略、不改配置。
 
 ---

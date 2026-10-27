@@ -28,6 +28,7 @@ permalink: /
 | [Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html) | 公告 RCE/严重度/在野措辞三口径、四条投递通道（内容解析器/浏览器内核/近场无线/基带）、执行落点权限模型、内存与非内存缺陷类型学、缓解机制与失效面矩阵、七项运营指标与两个只读核验脚本 | 22 章 | 772 行 |
 | [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html) | repo/manifest 源码供给与 2025-03-27 分支口径、Soong/kati/Ninja 流水线、out 与分区装配、签名与 test-keys 身份、AVB 绑定、APEX/Mainline、ACK/GKI 构建交付口径、CDD/CTS/VTS/STS 与十项供应链风险清点、两个只读核验脚本 | 22 章 | 874 行 |
 | [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html) | 沙箱四层叠加（Linux UID 身份/SELinux 域与类别/seccomp 调用面/进程与数据形态）、sharedUserId 与可调试性等边界合并形态、S1–S8 逃逸类缺陷类型学与缓解矩阵、十项运营指标与两个只读核验脚本（隔离快照与快照漂移比对） | 22 章 | 891 行 |
+| [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html) | 五套公开口径（MASVS 要求、MASTG 测试、MASWE 弱点枚举、Mobile Top 10、CWE/CWE-919）各自回答什么与怎样换算、MASVS v1 V1–V8 与 v2 八域迁移、清单层可见的 41 个弱点信号与不可见的四类、目标版本默认值漂移、四级判定模型与十项运营指标、两个只读核验脚本（APK 清单清点与两次清点的漂移比对） | 23 章 | 1404 行 |
 
 ## 建议阅读顺序
 
@@ -41,6 +42,7 @@ permalink: /
 8. 关心"外部输入怎么到达设备上的解析代码"时读**远程代码执行**篇（四条投递通道、执行落点权限、缓解机制与只读核验脚本）；它之后接**Framework 信任边界**篇与**内核漏洞与提权防御**篇，即"进来之后能走到哪"。
 9. 关心"这份固件是怎么被做出来的、能不能归因"时读**平台代码组织与构建体系**篇（manifest 供给、构建流水线、签名与构建身份、兼容性义务）；**系统架构**篇与**内核结构**篇回答"产物装成什么、由谁加载"，而它回答"产物从哪些源码来、由谁签发"。
 10. 关心"一个应用进程到底被什么围住、什么时候围不住"时读**应用沙箱与进程隔离**篇（四层叠加、身份合并与可调试性放宽、逃逸类缺陷类型学、快照与漂移两个只读脚本）；它与**系统架构**篇互为表里——那篇给出四层的位置，这篇给出强度的测量方式，之后再接**Framework 信任边界**篇（权限判定）与**内核漏洞与提权防御**篇（越层之后）。
+11. 需要把"这个应用有哪些弱点"写进验收标准、门禁或供应商问卷时读**应用安全弱点分类**篇（五套公开口径的换算、清单层可见与不可见的分界、目标版本引起的默认值漂移、四级判定与两个离线只读脚本）；它把**攻击面方法论**篇的"面上站着谁"换成"哪一类弱点、按哪套口径验收"，并与**应用沙箱**篇互为两侧——那篇是平台给应用的约束，这篇是应用自己声明的姿态。
 
 各篇之间按"视角"分工并互相交叉引用，重复内容只保留引用不重复展开。
 
@@ -55,6 +57,7 @@ permalink: /
 
 ## 更新记录
 
+- 2026-10-27：新增《Android 应用安全弱点分类分析报告》（MASVS/MASTG/MASWE/Mobile Top 10/CWE 五套口径的换算、清单层 41 个弱点信号、目标版本默认值漂移、两个离线只读核验脚本）。
 - 2026-10-26：新增《Android 应用沙箱与进程隔离防御分析报告》《Android 平台代码组织与构建体系分析报告》《Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验》《Android 厂商硬件安全组件形态与实现差异分析报告》《Android 补丁传导链与厂商更新治理分析报告》。
 - 2026-10-25：新增《Android 攻击面与漏洞研究方法论分析报告》（九域可达面清点 + 研究方法论 + 只读测绘脚本）。
 - 2026-10-24：新增《Android Binder IPC 协议与运行时机制分析报告》；站点化（Pages + 目录页 + 站点地图）。

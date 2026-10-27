@@ -20,6 +20,7 @@ permalink: /Android-Patch-Delivery-Chain-and-OEM-Update-Governance/
   - [Android 跨域攻击面地图与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html)（第 12 域分发/更新/调试通道、分诊归因与补丁验证流程）
   - [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html)（版本绑定、度量与证明——本文第 2.3 节用到它的语义）
   - [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html)（器件与认证侧证据；本文负责"固件能不能推到设备上"这一半）
+  - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（本文讲修没修到，该篇讲这一类弱点有没有被纳入检查：更新治理解决已定义缺陷的分发，分类学解决未声明形态的发现）
 - 范围声明：全文只讨论**公开文档化**的公告机制、更新通道、厂商公开政策与公开研究数据，并给出防御侧的度量、核验与治理方法。**不提供任何绕过更新校验、伪造补丁级别、降级固件或规避厂商限制的操作步骤，也不含漏洞利用代码。**所有"核验"均指在你拥有或获授权的设备上执行只读采集。
 
 ---
