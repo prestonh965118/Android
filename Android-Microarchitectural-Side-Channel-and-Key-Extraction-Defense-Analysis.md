@@ -27,6 +27,7 @@ permalink: /Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-A
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)（协议词表与 Stable AIDL；本文不涉及 IPC 接口缺陷，只在第十一章用它的域标识口径解释采样权限的归属）
   - [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html)（`CONFIG_*` 与编译选项的装配口径；本文第八章的编译期缓解层依赖该篇的构建可复现性表述）
   - [Android 远程代码执行攻击面与防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html)（远程入口与执行链；本文第十八章说明**为什么缓解项不能作为可独立更新的模块单元下发**，远程代码执行链的构造细节全部引向该篇）
+  - [Android Project Mainline 与 APEX 模块缺陷归属分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.html)（本文写六层归属与 `vulnerabilities` 读数面，结论之一是缓解项**没有模块载体**；该篇处理有载体的另一侧，即 Mainline 把可更新单元钉在容器上时归属怎样成立——两篇合起来才是"哪些缺陷能走模块通道、哪些只能走整机 OTA"的完整口径）
 - 范围声明：全文只讨论**公开文档化**的微架构缺陷类别、厂商公告口径、内核与平台的公开缓解机制，以及在这些公开规则之上可安全实施的**只读**清点与比对流程。**不提供任何可用的漏洞利用代码、探针序列、内存布局偏移、原语构造、信道容量测算方法、缓存集数设定步骤或策略绕过流程；不给出任何针对具体机型或微码版本的攻防操作。**本文两个脚本一个只做设备侧只读采集（`get-state` / `getprop` / `uname` / `cat` / `ls` / `getenforce` / `mount` / `ps` 八类命令，全部指向公开节点），一个只做离线文本比对；两者都不写设备、不安装任何东西、不访问网络、不运行任何计时或缓存探针、不读取任何进程的非公开 `/proc` 条目。所有"核验"指读者对**自有或已明确获授权的测试设备**执行采集。
 
 ---

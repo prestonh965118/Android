@@ -19,6 +19,7 @@ permalink: /Android-Root-of-Trust-and-Key-Stack-Mechanisms/
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)：BC_/BR_ 词表、身份与 SELinux 判定、binderfs、Stable AIDL 与 RPC
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲密钥栈、证明链与安全元件本身；该篇讲这套栈的消费侧——NFC 的 off-host 与 Secure NFC 开关、蓝牙既有绑定留下的配对强度记号——在设备侧能被只读观察到什么，以及观察不到的部分为什么记成缺口）
   - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写 KeyMint/StrongBox/DICE 的机制与密钥存储；该篇只问"安全元件是否在侧信道口径内免疫"这一条边界，并把密钥业务实现层单列成一档给出自查口径，密钥栈的构造细节全部留在本文）
+  - [Android Project Mainline 与 APEX 模块缺陷归属分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.html)（本文写 KeyMint/StrongBox/DICE 的机制与密钥存储；该篇只取容器完整性四件套这一条边界，用来说明**能证明镜像未被改动、不能证明缺陷归属到哪次修复**，密钥栈构造全部留在本文）
 - 范围声明：全文仅描述**公开文档化的机制与其设计意图**，用于加固、选型与取证。不提供任何密钥提取、签名校验绕过、锁屏口令恢复或可操作的攻击流程；涉及已知失效类别时，只引用官方通告与文档给出的定性结论。
 
 ---

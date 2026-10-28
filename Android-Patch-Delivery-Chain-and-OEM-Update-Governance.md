@@ -23,6 +23,7 @@ permalink: /Android-Patch-Delivery-Chain-and-OEM-Update-Governance/
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（本文讲修没修到，该篇讲这一类弱点有没有被纳入检查：更新治理解决已定义缺陷的分发，分类学解决未声明形态的发现）
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文的 S1–S5 链条解释补丁为什么到不了设备；该篇把无线侧当作最难归因的一条通道来使用这些结论：基带固件与蓝牙控制器固件通常落在 SPL 语义难以直接覆盖的位置，设备侧能读到的往往只有 `gsm.version.baseband`，所以"读不到"被记成缺口而不是通过）
   - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写 SPL 两档语义、S1–S5 链条与三条更新通道；该篇把 SPL 严格当**时间锚点**使用，并说明为什么微架构缓解项的到达性它答不了：缓解编在内核与微码里，不作为可独立更新的模块单元下发）
+  - [Android Project Mainline 与 APEX 模块缺陷归属分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.html)（本文写 SPL 两档语义、补丁传导链条与更新通道治理；该篇把 SPL 严格当**时间锚点**使用，专门回答"补丁级别前进了为什么不能写成模块版本也前进了"——通道指标在本文，模块级证据在该篇）
 - 范围声明：全文只讨论**公开文档化**的公告机制、更新通道、厂商公开政策与公开研究数据，并给出防御侧的度量、核验与治理方法。**不提供任何绕过更新校验、伪造补丁级别、降级固件或规避厂商限制的操作步骤，也不含漏洞利用代码。**所有"核验"均指在你拥有或获授权的设备上执行只读采集。
 
 ---

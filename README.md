@@ -25,6 +25,7 @@
 | [Android-App-Security-Weakness-Taxonomy-Defense-Analysis.md](./Android-App-Security-Weakness-Taxonomy-Defense-Analysis.md) | Android 应用安全弱点分类分析（MASVS/MASTG/MASWE/Mobile Top 10/CWE 五套公开口径的分工与换算、MASVS v1 V1–V8 与 v2 八域迁移、CWE-919 移动视图 21 成员、清单层可见的 41 个弱点信号与不可见的四类、目标版本默认值漂移、四级判定模型与十项运营指标、两个离线只读核验脚本） |
 | [Android-Wireless-Stack-and-Baseband-Defense-Analysis.md](./Android-Wireless-Stack-and-Baseband-Defense-Analysis.md) | Android 无线协议栈与基带缺陷防御分析（无线侧六层构成、协议栈/配对认证/基带固件三套口径的分离、"邻近即远程"的严重度基线、W1–W10 缺陷类型学与 CWE 对齐、FragAttacks/KRACK/Dragonblood/BIAS/KNB/BlueBorne/BLEEDINGBIT/Exynos 八组公开案例读数、基带可见性边界、层×责任×更新通道×设备侧证据归属矩阵、四级判定模型与十项运营指标、两个只读核验脚本共 104 个信号码） |
 | [Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.md](./Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.md) | Android 微架构侧信道与密钥抽取防御分析（六层归属：硅与微码/内核编译期/内核启动参数/平台策略/运行时与虚拟机/密钥业务实现、`/sys/devices/system/cpu/vulnerabilities` 三前缀词表与文件名清单、arm64 与 x86 词表不等价为什么不能跨架构比等级、M1–M10 按观测能力分型与 CWE-1303/200/208 对齐、Spectre/Meltdown/MDS/GDS/Retbleed 与 Arm 专属研究家族的读数方式、Zygote 共享与 DVFS 等 Android 特有放大器、SELinux 对 perf 与 /proc 的收敛、微码到达性这条唯一无法自证的层、四级判定模型与 K1–K10 运营指标、两个只读核验脚本共 141 个信号码与全量分支覆盖验收） |
+| [Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.md](./Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.md) | Android Project Mainline 与 APEX 模块缺陷归属分析（公告词表与模块词表的对应与落差、模块形态与生命周期、设备侧只读核验）
 
 ---
 

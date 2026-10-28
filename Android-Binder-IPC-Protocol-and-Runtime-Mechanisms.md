@@ -21,6 +21,7 @@ permalink: /Android-Binder-IPC-Protocol-and-Runtime-Mechanisms/
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)：清单里那些"谁会接到跨进程调用"的导出与权限声明属应用侧姿态（`sharedUserId`、导出组件、URI 授权），本文讲 binder 在哪一步检查这套身份与权限
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲 binder 在哪一步检查身份与权限；该篇讲承载 Wi-Fi/蓝牙/NFC 请求的那几类协议栈进程处于哪个执行域，以及 HAL 接口语言从 HIDL 转 AIDL 的记号为什么只能当旁证而不是修复证明）
   - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写协议词表、身份传递与 SELinux 判定；该篇不涉及 IPC 接口缺陷，只在平台策略层借用本文的域标识口径说明采样与观测权限归谁）
+  - [Android Project Mainline 与 APEX 模块缺陷归属分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.html)（本文写协议词表、身份传递与 SELinux 判定；该篇不涉及接口缺陷，只把服务面的"查找门"与"调用者门"当成观测面来分流，用来说明一次失败该记策略缺口还是记身份缺口）
 - 范围声明：全文仅描述**公开文档化与源码可核验的机制**。不提供任何利用步骤、偏移量或绕过流程；涉及 binder 驱动缺陷类别时，只转述 Google 安全公告给出的定性字段（类型、严重级、受影响组件），不描述成因细节。
 
 ---

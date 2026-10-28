@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Android 安全分析报告集"
-description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时、跨域攻击面与漏洞研究方法论、厂商硬件安全组件形态、补丁传导链与更新治理、远程代码执行攻击面与防御核验、平台代码组织与构建体系、应用沙箱与进程隔离、应用安全弱点分类、无线协议栈与基带缺陷防御、微架构侧信道与密钥抽取防御"
+description: "Android 平台防御性安全分析报告合集：内核漏洞与提权、Framework 信任边界、系统架构、内核结构与子系统、硬件信任根与密钥栈、Binder IPC 协议与运行时、跨域攻击面与漏洞研究方法论、厂商硬件安全组件形态、补丁传导链与更新治理、远程代码执行攻击面与防御核验、平台代码组织与构建体系、应用沙箱与进程隔离、应用安全弱点分类、无线协议栈与基带缺陷防御、微架构侧信道与密钥抽取防御、Project Mainline 与 APEX 模块缺陷归属"
 lang: zh-CN
 permalink: /
 ---
@@ -16,21 +16,23 @@ permalink: /
 
 | 报告 | 覆盖范围 | 章节 | 篇幅 |
 | --- | --- | --- | --- |
-| [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html) | 内核攻击面分级、缺陷类型学、公开 CVE 案例、缓解矩阵、补丁治理指标与提权取证 | 14 章 | 544 行 |
-| [Android Framework 信任边界与越权漏洞分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.html) | Framework 层身份与权限模型、越权类缺陷类型学、EoP 公告归因与检测 | 14 章 | 572 行 |
-| [Android 系统架构分析报告：分层、进程与信任边界](https://android-security-reports-0e8t10askpz.qoder.website/Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.html) | 六段分层、进程模型、HAL/Treble、SELinux/seccomp/AID 身份与三条更新通道 | 19 章 | 655 行 |
-| [Android Linux 内核结构与子系统机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Linux-Kernel-Structure-and-Subsystems.html) | GKI 内核镜像形态、模块与子系统、设备节点供给、安全控制落点与能力边界 | 18 章 | 610 行 |
-| [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html) | AVB 验证启动、DICE 与 RKP、KeyMint/StrongBox、Gatekeeper/Weaver、密钥证明与 FBE | 20 章 | 778 行 |
-| [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html) | BC_/BR_ 协议词表、对象生命周期与死亡/冻结、事务缓冲区与线程池、SELinux 判定、binderfs、Stable AIDL 与 RPC | 22 章 | 924 行 |
-| [Android 攻击面与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html) | 九域可达面清点单元与 R0–R4 分级、跨域地图、目标选择评分、静态/模糊测试方法、补丁到达性验证、检测覆盖矩阵与测绘脚本 | 23 章 | 776 行 |
-| [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html) | 独立安全处理器与 SoC 内安全世界、Trusty 与 OP-TEE 路线、StrongBox/eSE、AVF/pKVM、Knox Vault 与 Titan M2 形态，以及可外部核验信号与不可核验边界 | 16 章 | 529 行 |
-| [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html) | SPL 两档与框架/厂商两侧语义、S1–S5 五段链条与公开证据、三条并行更新通道、更新承诺三处坑、八项可运营指标与两个只读核验脚本 | 17 章 | 547 行 |
-| [Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html) | 公告 RCE/严重度/在野措辞三口径、四条投递通道（内容解析器/浏览器内核/近场无线/基带）、执行落点权限模型、内存与非内存缺陷类型学、缓解机制与失效面矩阵、七项运营指标与两个只读核验脚本 | 22 章 | 772 行 |
-| [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html) | repo/manifest 源码供给与 2025-03-27 分支口径、Soong/kati/Ninja 流水线、out 与分区装配、签名与 test-keys 身份、AVB 绑定、APEX/Mainline、ACK/GKI 构建交付口径、CDD/CTS/VTS/STS 与十项供应链风险清点、两个只读核验脚本 | 22 章 | 874 行 |
-| [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html) | 沙箱四层叠加（Linux UID 身份/SELinux 域与类别/seccomp 调用面/进程与数据形态）、sharedUserId 与可调试性等边界合并形态、S1–S8 逃逸类缺陷类型学与缓解矩阵、十项运营指标与两个只读核验脚本（隔离快照与快照漂移比对） | 22 章 | 891 行 |
-| [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html) | 五套公开口径（MASVS 要求、MASTG 测试、MASWE 弱点枚举、Mobile Top 10、CWE/CWE-919）各自回答什么与怎样换算、MASVS v1 V1–V8 与 v2 八域迁移、清单层可见的 41 个弱点信号与不可见的四类、目标版本默认值漂移、四级判定模型与十项运营指标、两个只读核验脚本（APK 清单清点与两次清点的漂移比对） | 23 章 | 1404 行 |
-| [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html) | 无线侧六层构成（芯片固件/内核无线子系统/用户态协议栈/HAL/Framework 权限/设备与企业策略）、协议栈缺陷·配对认证缺陷·基带固件缺陷三套口径的分离、"邻近即远程"的严重度基线、W1–W10 缺陷类型学与 CWE 对齐、FragAttacks/KRACK/Dragonblood/BIAS/KNB/BlueBorne/BLEEDINGBIT/Exynos 八组公开案例读数、基带为什么单列一档与它的可见性边界、层×责任×更新通道×设备侧证据的归属矩阵、四级判定模型与十项运营指标、两个只读核验脚本（无线姿态快照 65 码位与两次快照的漂移比对 39 码位） | 29 章 | 1904 行 |
-| [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html) | 侧信道的六层归属（硅与微码/内核编译期/内核启动参数/平台策略/运行时与虚拟机/密钥业务实现）、设备侧唯一权威读数面 `/sys/devices/system/cpu/vulnerabilities` 的三前缀词表与文件名清单及其成立条件、arm64 与 x86 词表不等价为什么不能跨架构比等级、`mitigations=` 的聚合语义与"参数存在但无效"、M1–M10 按所需观测能力分型并与 CWE-1303/200/208 对齐、Spectre/Meltdown/MDS/GDS/Retbleed 与 Arm 专属研究家族的读数方式、Android 特有放大器（Zygote 共享、ART 与 JIT、DVFS）与收敛器（SELinux 对 perf 与 /proc、init.rc 的三个 sysctl、Profiling 模块）、微码为什么是唯一一条设备侧几乎无法自证的层、安全元件是否免疫的三问、四级判定模型与 K1–K10 运营指标、两个只读核验脚本（姿态快照 73 码位与两次快照的漂移比对 68 码位）及 141 个码位的全量分支覆盖验收 | 30 章 | 2729 行 |
+| [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html) | 内核攻击面分级、缺陷类型学、公开 CVE 案例、缓解矩阵、补丁治理指标与提权取证 | 14 章 | 548 行 |
+| [Android Framework 信任边界与越权漏洞分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Framework-Trust-Boundary-and-Vulnerability-Analysis.html) | Framework 层身份与权限模型、越权类缺陷类型学、EoP 公告归因与检测 | 14 章 | 576 行 |
+| [Android 系统架构分析报告：分层、进程与信任边界](https://android-security-reports-0e8t10askpz.qoder.website/Android-System-Architecture-Layers-Processes-and-Trust-Boundaries.html) | 六段分层、进程模型、HAL/Treble、SELinux/seccomp/AID 身份与三条更新通道 | 19 章 | 658 行 |
+| [Android Linux 内核结构与子系统机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Linux-Kernel-Structure-and-Subsystems.html) | GKI 内核镜像形态、模块与子系统、设备节点供给、安全控制落点与能力边界 | 18 章 | 615 行 |
+| [Android 硬件信任根与密钥栈机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Root-of-Trust-and-Key-Stack-Mechanisms.html) | AVB 验证启动、DICE 与 RKP、KeyMint/StrongBox、Gatekeeper/Weaver、密钥证明与 FBE | 20 章 | 781 行 |
+| [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html) | BC_/BR_ 协议词表、对象生命周期与死亡/冻结、事务缓冲区与线程池、SELinux 判定、binderfs、Stable AIDL 与 RPC | 22 章 | 929 行 |
+| [Android 攻击面与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html) | 九域可达面清点单元与 R0–R4 分级、跨域地图、目标选择评分、静态/模糊测试方法、补丁到达性验证、检测覆盖矩阵与测绘脚本 | 23 章 | 782 行 |
+| [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html) | 独立安全处理器与 SoC 内安全世界、Trusty 与 OP-TEE 路线、StrongBox/eSE、AVF/pKVM、Knox Vault 与 Titan M2 形态，以及可外部核验信号与不可核验边界 | 16 章 | 532 行 |
+| [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html) | SPL 两档与框架/厂商两侧语义、S1–S5 五段链条与公开证据、三条并行更新通道、更新承诺三处坑、八项可运营指标与两个只读核验脚本 | 17 章 | 551 行 |
+| [Android 远程代码执行分析报告：投递通道、缺陷类型学与防御侧核验](https://android-security-reports-0e8t10askpz.qoder.website/Android-Remote-Code-Execution-Attack-Surface-and-Defense-Analysis.html) | 公告 RCE/严重度/在野措辞三口径、四条投递通道（内容解析器/浏览器内核/近场无线/基带）、执行落点权限模型、内存与非内存缺陷类型学、缓解机制与失效面矩阵、七项运营指标与两个只读核验脚本 | 22 章 | 777 行 |
+| [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html) | repo/manifest 源码供给与 2025-03-27 分支口径、Soong/kati/Ninja 流水线、out 与分区装配、签名与 test-keys 身份、AVB 绑定、APEX/Mainline、ACK/GKI 构建交付口径、CDD/CTS/VTS/STS 与十项供应链风险清点、两个只读核验脚本 | 22 章 | 879 行 |
+| [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html) | 沙箱四层叠加（Linux UID 身份/SELinux 域与类别/seccomp 调用面/进程与数据形态）、sharedUserId 与可调试性等边界合并形态、S1–S8 逃逸类缺陷类型学与缓解矩阵、十项运营指标与两个只读核验脚本（隔离快照与快照漂移比对） | 22 章 | 895 行 |
+| [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html) | 五套公开口径（MASVS 要求、MASTG 测试、MASWE 弱点枚举、Mobile Top 10、CWE/CWE-919）各自回答什么与怎样换算、MASVS v1 V1–V8 与 v2 八域迁移、清单层可见的 41 个弱点信号与不可见的四类、目标版本默认值漂移、四级判定模型与十项运营指标、两个只读核验脚本（APK 清单清点与两次清点的漂移比对） | 23 章 | 1407 行 |
+| [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html) | 无线侧六层构成（芯片固件/内核无线子系统/用户态协议栈/HAL/Framework 权限/设备与企业策略）、协议栈缺陷·配对认证缺陷·基带固件缺陷三套口径的分离、"邻近即远程"的严重度基线、W1–W10 缺陷类型学与 CWE 对齐、FragAttacks/KRACK/Dragonblood/BIAS/KNB/BlueBorne/BLEEDINGBIT/Exynos 八组公开案例读数、基带为什么单列一档与它的可见性边界、层×责任×更新通道×设备侧证据的归属矩阵、四级判定模型与十项运营指标、两个只读核验脚本（无线姿态快照 65 码位与两次快照的漂移比对 39 码位） | 29 章 | 1906 行 |
+| [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html) | 侧信道的六层归属（硅与微码/内核编译期/内核启动参数/平台策略/运行时与虚拟机/密钥业务实现）、设备侧唯一权威读数面 `/sys/devices/system/cpu/vulnerabilities` 的三前缀词表与文件名清单及其成立条件、arm64 与 x86 词表不等价为什么不能跨架构比等级、`mitigations=` 的聚合语义与"参数存在但无效"、M1–M10 按所需观测能力分型并与 CWE-1303/200/208 对齐、Spectre/Meltdown/MDS/GDS/Retbleed 与 Arm 专属研究家族的读数方式、Android 特有放大器（Zygote 共享、ART 与 JIT、DVFS）与收敛器（SELinux 对 perf 与 /proc、init.rc 的三个 sysctl、Profiling 模块）、微码为什么是唯一一条设备侧几乎无法自证的层、安全元件是否免疫的三问、四级判定模型与 K1–K10 运营指标、两个只读核验脚本（姿态快照 73 码位与两次快照的漂移比对 68 码位）及 141 个码位的全量分支覆盖验收 | 30 章 | 2730 行 |
+
+| [Android Project Mainline 与 APEX 模块缺陷归属分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis.html) | Project Mainline、APEX 容器与"模块"三个词的分工、同一颗缺陷在四套词表里换四次名字（文档名/包名/公告 Subcomponent/SELinux 标签）、公告 component 词表与模块词表的差集矩阵、模块清单公开口径为什么是个移动目标、名称前缀由签名主体决定、容器四件套能证明完整性而不能证明归属、`name`+`version` 的版本语义与 minSupportedVersion 的证据强度、内置版本/更新版本/卸载后终态三种存在形态、"安装不等于激活"与重启才见效、构建装配为什么不能反向归因、两种到达方式与厂商选择属性、设备侧十二类读数面与 shell 域的预期失败表、模块身份的三个可见面、契约表面与原子回滚、公告登记的能与不能、M1–M6 六个归属面与 M-AT1–M-AT10 十个缺陷类型（含一类构造上不属于模块的缺陷）、十三组公告双表读数、四级判定模型与 K1–K10 运营指标、两个只读核验脚本（姿态快照 83 码位与两次快照的漂移比对 37 码位）及 120 个码位的全量分支覆盖验收 | 30 章 | 3024 行 |
 
 ## 建议阅读顺序
 
@@ -48,6 +50,8 @@ permalink: /
 12. 关心"空口进来的东西落在哪一层、由谁修、修好了显示在哪个版本号上"时读**无线协议栈与基带缺陷防御**篇（六层构成、三类口径的分离、W1–W10 类型学、八组公开案例读数、归属矩阵与两个只读脚本）；它接在**远程代码执行**篇之后——那篇把"近场无线"作为四条投递通道之一给出，这篇把这一条通道竖切放大；基带那一档则与**厂商硬件安全组件**篇（器件形态）和**补丁传导链**篇（更新到达性）互补：那两篇说明公告为什么常在登录墙之后，这篇说明设备侧因此只能读到一个版本串。
 13. 关心"同一颗芯片上谁能观察谁、缓解到底由哪一层负责、设备侧能自证到哪一步"时读**微架构侧信道与密钥抽取防御**篇（六层归属、`vulnerabilities` 词表与成立条件、arm64/x86 不可跨架构比等级、M1–M10 按观测能力分型、平台策略层为什么在 Android 上由 SELinux 而不是 sysctl 承担、K1–K10 指标与两个只读脚本的 141 个码位覆盖验收）；它与**应用沙箱与进程隔离**篇互为两半——那篇管"策略把谁能看什么钉在哪"，这篇管"钉住之后还剩哪些观测通道"；密钥实现层（H6）接**硬件信任根与密钥栈**篇，微码到达性（H1）接**补丁传导链**篇与**厂商硬件安全组件**篇，"读数全绿为什么不构成结论"接**攻击面与漏洞研究方法论**篇。
 
+14. 关心"一条修复到底算在框架上、算在系统分区上，还是算在某个可单独更新的模块上"时读**Project Mainline 与 APEX 模块归属**篇（四套词表的换名、公告表与模块清单的差集、清单作为移动目标、容器能证明完整性而不能证明归属、安装与激活的时间差、设备侧读数面与预期失败表、M1–M6 与 M-AT1–M-AT10、K1–K10 指标与两个只读脚本的 120 个码位覆盖验收）；它接在**补丁传导链**篇之后——那篇讲补丁怎样走到设备，这篇讲走到设备之后归属怎样落到一个模块版本上；公告双表读数接**攻击面与漏洞研究方法论**篇，装配与签名口径接**平台代码组织与构建体系**篇，shell 域读不到哪些面接**应用沙箱与进程隔离**篇，媒体与编解码这类模块作为承载体接**远程代码执行**篇与**无线协议栈**篇。
+
 各篇之间按"视角"分工并互相交叉引用，重复内容只保留引用不重复展开。
 
 ## 代码仓库与镜像
@@ -61,6 +65,7 @@ permalink: /
 
 ## 更新记录
 
+- 2026-10-28：新增《Android Project Mainline 与 APEX 模块缺陷归属分析报告》（四套词表的换名与差集矩阵、模块清单作为移动目标、容器完整性与归属证明的落差、安装与激活的时间差、设备侧十二类读数面与 shell 域预期失败表、M1–M6 与 M-AT1–M-AT10、十三组公告双表读数、K1–K10 运营指标、两个只读核验脚本共 120 个信号码与全量分支覆盖验收）。
 - 2026-10-28：新增《Android 微架构侧信道与密钥抽取防御分析报告》（六层归属、`vulnerabilities` 三前缀词表与成立条件、arm64/x86 词表不等价、M1–M10 按观测能力分型、平台策略层与 Android 特有放大器、微码到达性边界、K1–K10 运营指标、两个只读核验脚本共 141 个信号码与全量分支覆盖验收）。
 - 2026-10-27：新增《Android 无线协议栈与基带缺陷防御分析报告》（六层构成、三类口径分离、"邻近即远程"的严重度基线、W1–W10 类型学与八组公开案例、基带可见性边界、归属矩阵、两个只读核验脚本共 104 个信号码）。
 - 2026-10-27：新增《Android 应用安全弱点分类分析报告》（MASVS/MASTG/MASWE/Mobile Top 10/CWE 五套口径的换算、清单层 41 个弱点信号、目标版本默认值漂移、两个离线只读核验脚本）。
