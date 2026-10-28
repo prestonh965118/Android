@@ -22,6 +22,7 @@ permalink: /Android-App-Security-Weakness-Taxonomy-Defense-Analysis/
   - [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html)（构建变体与签名身份从哪来；本文的"构建身份类弱点"依赖这一侧的口径）
   - [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html)（修没修到；本文讲**这一类弱点有没有被纳入检查**，两者是不同的治理问题）
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（该篇按应用自己在清单里声明的弱点形态归类，清点对象是 APK；本篇按系统无线栈的层与责任人归类，清点对象是设备姿态。两者共用"证据从哪来、读不到就记成缺口"这条判定纪律，但换算口径互不适用）
+  - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写应用自己声明的弱点形态与五套公开口径的换算；该篇的对象是芯片、内核与运行时，两篇共享"证据从哪来"这条线，但清单层读不到该篇的任何结论，反之该篇不判定应用包内的弱点）
 - 范围声明：全文只讨论**公开文档化**的分类体系、公开披露的弱点类别与平台公开行为，以及在这些公开规则之上可安全实施的**只读**清点与检测流程。**不提供任何可用的漏洞利用代码、内存布局偏移、原语构造、策略绕过步骤或可操作的攻击流程。**所有"核验"指读者对**自有或已获授权测试的应用包与设备**执行采集。OWASP 对测试文档本身也给出了同样的边界提醒："Remember, attacking a system without written authorization is illegal in many parts of the world!"（参考资料 5）。本文的两个脚本都不接触设备：一个把你自有 APK 的清单展开文本转成分级清单，一个比对两份这样的清单；两者都不访问网络、不写被检查对象。
 
 ---

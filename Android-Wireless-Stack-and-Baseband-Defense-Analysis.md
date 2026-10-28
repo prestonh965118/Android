@@ -26,6 +26,7 @@ permalink: /Android-Wireless-Stack-and-Baseband-Defense-Analysis/
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（应用侧声明的弱点形态；本文的判定同样落在"证据从哪来"这条线上，但对象是系统无线栈而不是应用包）
   - [Android 内核漏洞与提权防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Kernel-Vulnerability-and-Privilege-Escalation-Defense.html)（内核侧缺陷类型学、缓解矩阵与提权取证；本文的 L2 层只按公开接口口径引用 cfg80211/mac80211，不重复展开内核缺陷本身）
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)（协议词表、身份与 SELinux 判定、Stable AIDL；本文 L4 层引用的 HAL 接口语言记号按该篇口径读取）
+  - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写无线侧的分层与责任、"邻近即远程"的严重度基线；该篇沿用同一口径解释**为什么本地权限的侧信道公告通常仍按高严重度处理**，并把可见性边界从固件公告换成微码与 CPU 厂商公告）
 - 范围声明：全文只讨论**公开文档化**的无线分层、公开披露的缺陷类别与公告口径，以及在这些公开规则之上可安全实施的**只读**清点与比对流程。**不提供任何可用的漏洞利用代码、内存布局偏移、原语构造、空口报文构造、策略绕过步骤或可操作的攻击流程；不给出任何针对具体机型或固件的攻防操作。**所有"核验"指读者对**自有或已获授权测试的设备**执行采集。本文两个脚本一个只做设备侧只读采集（`get-state` / `getprop` / `settings get` / `dumpsys` / `pm list features` / `toybox ls /apex` 六类命令），一个只做离线文本比对；两者都不写设备、不安装任何东西、不访问网络、不打印 SSID 与蓝牙设备地址。
 
 ---

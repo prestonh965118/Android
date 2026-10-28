@@ -23,6 +23,7 @@ permalink: /Android-Platform-Code-Organization-and-Build-System-Analysis/
   - [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html)（本文讲 `user`/`userdebug`/`eng` 构建身份从哪来、被谁签发，该篇讲这一身份在设备上落到可调试性与 `ro.debuggable` 之后，应用沙箱的执行域与 UID 会一起放宽到什么程度）
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（本文讲构建身份从哪来、被谁签发，该篇讲同一套身份在应用侧变成哪些可在 APK 清单上静态观察的弱点信号，以及弱点分类按哪五套公开口径换算）
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲 APEX 与 Mainline 模块怎样被构建、装配与签名；该篇把 `com.android.wifi` 与可选的 `com.google.android.bt` 当**更新通道**而不是构建产物来使用，说明模块清单能证明什么、不能证明什么）
+  - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写 `CONFIG_*` 与编译选项怎样被装配进产物、构建能否归因；该篇的"内核编译期缓解层"直接依赖本文的构建可复现性口径，反之不重复展开缓解语义）
 - 范围声明：全文只讨论**公开文档化**的仓库组织、构建工具链、镜像装配、签名与兼容性检查规则，以及在这些公开规则之上可以安全实施的清点与核验流程。**不提供任何伪造签名、绕过验证启动、篡改构建产物或复刻他人固件的操作步骤。**文中所有"如何核验"类内容均指自有代码库/自有设备的自查、供应商评估与检测覆盖建设；脚本全部为只读采集或离线文本对照，不写入设备、不修改构建、不安装策略。
 
 ---

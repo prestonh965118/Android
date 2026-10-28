@@ -21,6 +21,7 @@ permalink: /Android-Hardware-Security-Components-and-Vendor-Implementations/
   - [Android 跨域攻击面地图与漏洞研究方法论分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Attack-Surface-and-Vulnerability-Research-Methodology.html)（九域攻击面清点、SoC 厂商驱动与基带域、研究流程）
   - [Android 补丁传导链与厂商更新治理分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Patch-Delivery-Chain-and-OEM-Update-Governance.html)（固件与补丁怎么推到设备上、SPL 两侧字段与到达性核验——本文负责"器件与可核验信号"那一半）
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲器件形态与可外部核验信号；该篇讲无线器件——Wi-Fi/蓝牙组合芯片与基带调制解调器——的固件公告为什么常在厂商登录墙之后甚至已经下线，以及公告不可得如何落进它的四级判定模型）
+  - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写器件形态与可外部核验信号；该篇写**同一型号 SoC 在不同核心上的缓解差异**，以及微码为什么是唯一一条设备侧几乎无法自证的层——两篇的可见性边界互补，都在公告常位于登录墙之后这一侧）
 - 范围声明：全文只讨论**公开文档化**的形态、厂商公开技术文档与认证材料、AOSP 公开代码与 Google 官方页面，以及公开公告/论文中的缺陷类别。**不提供任何提取密钥、绕过验证启动、解锁引导加载器、绕过设备完整性判定或规避防盗保护的操作步骤，也不提供漏洞利用代码、内存布局偏移或原语构造。**文中"核验"类内容一律指在你拥有或获授权的设备上执行只读检查，用于资产清点、采购评估与取证。
 
 ---

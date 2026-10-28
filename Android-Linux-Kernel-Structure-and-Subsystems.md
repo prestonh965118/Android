@@ -19,6 +19,7 @@ permalink: /Android-Linux-Kernel-Structure-and-Subsystems/
   - [Android 平台代码组织与构建体系分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Platform-Code-Organization-and-Build-System-Analysis.html)（ACK 分支命名与上游优先、GKI 的二进制交付与 KMI/hermetic manifest、构建产物如何被签名与装配；本文讲内核的结构与落点，该篇讲它的构建与交付口径）
   - [Android 应用沙箱与进程隔离防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Sandbox-and-Process-Isolation-Defense-Analysis.html)（本文讲内核把设备节点与子系统供给成什么形状，该篇讲应用进程在这一形状之内被 UID、SELinux 域与 seccomp 三层同时围住、以及每层被单独放宽时在设备侧留下什么信号）
   - [Android 无线协议栈与基带缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Wireless-Stack-and-Baseband-Defense-Analysis.html)（本文讲内核把子系统与设备节点供给成什么形状；该篇只使用 cfg80211/mac80211/nl80211 的公开接口口径，把重心放在这些形状之上运行的协议栈由谁维护、修复显示在哪个版本号上，不重复展开内核实现）
+  - [Android 微架构侧信道与密钥抽取防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Microarchitectural-Side-Channel-and-Key-Extraction-Defense-Analysis.html)（本文写内核子系统与设备节点怎样供给；该篇只使用 `/sys/devices/system/cpu/` 与 `/proc/sys/kernel/` 这两处公开接口，本文展开的内核实现不在它范围内，它引用的接口口径以本文为准）
 - 范围声明：全文仅描述公开文档化的机制与其设计意图，不提供任何漏洞利用代码、偏移量、绕过步骤或可操作的攻击流程。
 
 ---
