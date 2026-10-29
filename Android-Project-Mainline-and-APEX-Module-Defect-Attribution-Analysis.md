@@ -27,6 +27,7 @@ permalink: /Android-Project-Mainline-and-APEX-Module-Defect-Attribution-Analysis
   - [Android Binder IPC 协议与运行时机制分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Binder-IPC-Protocol-and-Runtime-Mechanisms.html)（`apex_service` 的 binder 服务与 SELinux 判定；本文第十三章的"shell 拿不到 apex_service"按该篇的域标识口径解释）
   - [Android 厂商硬件安全组件形态与实现差异分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Hardware-Security-Components-and-Vendor-Implementations.html)（器件形态与厂商侧可见性；本文第十九章的 widevine/TPU/Cellular Modem 读数说明**器件缺陷为什么落不进模块表**）
   - [Android 应用安全弱点分类分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-App-Security-Weakness-Taxonomy-Defense-Analysis.html)（应用侧声明的弱点口径；本文第十五章的 `@hide` 符号消失问题与它的"目标版本改变默认值"同属**同一份代码在不同安装形态下行为不同**这一类）
+  - [Android 媒体与加速器固件缺陷防御分析报告](https://android-security-reports-0e8t10askpz.qoder.website/Android-Media-and-Accelerator-Firmware-Defect-Defense-Analysis.html)（另一侧的归属难题：缺陷住在 GPU / DSP / ISP / 编解码器的固件里，**既没有模块载体，公告词表里也没有"固件"这个词**；该篇处理"归属靠器件名与 SPL 行"，本篇处理"归属靠 `com.android.*` 模块名"。两篇共用四级判定模型与 K1–K10 口径，但信号码互不复用）
 - 范围声明：全文只讨论**公开文档化**的模块机制、公告口径、源码里可指认的字段与属性，以及在这些公开规则之上可以安全实施的**只读**清点与比对流程。**不提供任何可用的漏洞利用代码、提权或绕过步骤、模块替换或降级安装的操作方法、签名材料的制作流程；不给出任何针对具体机型或固件版本的攻防操作。**本文两个脚本，一个只做设备侧只读采集（`get-state` / `getprop` / `ls` / `cat` / `stat` / `dumpsys` / `cmd` 七类命令，全部指向公开路径与公开服务，且脚本自身对预期失败不隐藏错误），一个只做离线文本比对；两者都不写设备、不安装或卸载任何东西、不挂载或卸载文件系统、不访问网络、不触发任何安装会话。所有"核验"指读者对**自有或已明确获授权的测试设备**执行采集。
 
 ---
